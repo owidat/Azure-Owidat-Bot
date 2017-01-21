@@ -13,7 +13,7 @@ public class BasicForm
     public string Name { get; set; }
 
     [Prompt("Please select your favorite car type {||}")]
-    public CarOptions_AR Car { get; set; }
+    public CarOptions Car { get; set; }
 
     [Prompt("Please select your favorite {&} {||}")]
     public ColorOptions Color { get; set; }
