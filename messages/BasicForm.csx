@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Bot.Builder.FormFlow;
 
-public string[] CarOptions = { "Convertible", "SUV", "EV" };
+public enum CarOptions { Convertible = 1, SUV, EV };
 public string[] CarOptions_AR = { "سيارة مكشوفة", "الدفع الرباعي", "كهربائية" };
 public enum ColorOptions { Red = 1, White, Blue };
 
@@ -13,7 +13,7 @@ public class BasicForm
     public string Name { get; set; }
 
     [Prompt("Please select your favorite car type {||}")]
-    public CarOptions_AR Car { get; set; }
+    public CarOptions Car { get; set; }
 
     [Prompt("Please select your favorite {&} {||}")]
     public ColorOptions Color { get; set; }
