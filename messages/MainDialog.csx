@@ -1,4 +1,4 @@
-#load "BasicForm.csx"
+﻿#load "BasicForm.csx"
 
 using System;
 using System.Threading.Tasks;
@@ -33,16 +33,16 @@ public class MainDialog : IDialog<BasicForm>
             var form = await result;
             if (form != null)
             {
-                await context.PostAsync("Thanks for completing the form! Just type anything to restart it.");
+                await context.PostAsync("شكراً لك على استكما هذه المعلومات :)");
             }
             else
             {
-                await context.PostAsync("Form returned empty response! Type anything to restart it.");
+                await context.PostAsync("معلومات غير مكتملة. الرجاء إعادة المحاولة بكتابة أي رد.");
             }
         }
         catch (OperationCanceledException)
         {
-            await context.PostAsync("You canceled the form! Type anything to restart it.");
+            await context.PostAsync("تم إلغاء الطلبات. الرجاء كتابة أي رد لإعادة المحاولة.");
         }
 
         context.Wait(MessageReceivedAsync);

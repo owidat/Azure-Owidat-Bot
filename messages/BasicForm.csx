@@ -9,13 +9,13 @@ public enum ColorOptions { Red = 1, White, Blue };
 [Serializable]
 public class BasicForm
 {
-    [Prompt("Hi! What is your {&}?")]
+    [Prompt("مرحباً، ما هو اسمك لو تكرمت")]
     public string Name { get; set; }
 
-    [Prompt("Please select your favorite car type {||}")]
+    [Prompt("ما هو نوع سيارتك المفضلة؟ {||}")]
     public CarOptions Car { get; set; }
 
-    [Prompt("Please select your favorite {&} {||}")]
+    [Prompt("ما هو اللون المفضل لسيارتك {&} {||}")]
     public ColorOptions Color { get; set; }
 
     public static IForm<BasicForm> BuildForm()
