@@ -2,7 +2,7 @@
 using Microsoft.Bot.Builder.FormFlow;
 
 public enum CarOptions { Convertible = 1, SUV, EV };
-public enum CarOptions_AR { Convertible = "سيارة مكشوفة", SUV = "الدفع الرباعي", EV = "كهربائية" };
+//public enum CarOptions_AR { Convertible = "سيارة مكشوفة", SUV = "الدفع الرباعي", EV = "كهربائية" };
 public enum ColorOptions { Red = 1, White, Blue };
 
 // For more information about this template visit http://aka.ms/azurebots-csharp-form
