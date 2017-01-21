@@ -15,7 +15,7 @@ public class BasicForm
     [Prompt("ما هو نوع سيارتك المفضلة؟ {||}")]
     public CarOptions Car { get; set; }
 
-    [Prompt("ما هو اللون المفضل لسيارتك {&} {||}")]
+    [Prompt("ما هو اللون المفضل لسيارتك {||}")]
     public ColorOptions Color { get; set; }
 
     public static IForm<BasicForm> BuildForm()
