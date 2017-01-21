@@ -1,7 +1,8 @@
-using System;
+﻿using System;
 using Microsoft.Bot.Builder.FormFlow;
 
-public enum CarOptions { Convertible = 1, SUV, EV };
+public string[] CarOptions = { "Convertible", "SUV", "EV" };
+public string[] CarOptions_AR = { "سيارة مكشوفة", "الدفع الرباعي", "كهربائية" };
 public enum ColorOptions { Red = 1, White, Blue };
 
 // For more information about this template visit http://aka.ms/azurebots-csharp-form
@@ -12,7 +13,7 @@ public class BasicForm
     public string Name { get; set; }
 
     [Prompt("Please select your favorite car type {||}")]
-    public CarOptions Car { get; set; }
+    public CarOptions_AR Car { get; set; }
 
     [Prompt("Please select your favorite {&} {||}")]
     public ColorOptions Color { get; set; }
