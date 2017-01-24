@@ -1,3 +1,4 @@
-# Debugging a C# Azure Bot Service bot in Visual Studio 
+# Testing an Arabic C# Azure Bot Service in Visual Studio 
 
-To learn how to debug Azure Bot Service bots, please visit https://aka.ms/bf-docs-azure-debug
+Just testing Arabic text inside an C# project from auto created Azure bot Services
+Connected to Skype channel for testing :)

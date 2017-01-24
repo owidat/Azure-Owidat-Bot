@@ -33,7 +33,7 @@ public class MainDialog : IDialog<BasicForm>
             var form = await result;
             if (form != null)
             {
-                await context.PostAsync("شكراً لك على استكما هذه المعلومات :)");
+                await context.PostAsync("شكراً لك على استكمال هذه المعلومات :)");
             }
             else
             {
